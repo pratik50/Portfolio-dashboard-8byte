@@ -1,0 +1,55 @@
+{
+  "sectors": [
+    {
+      "name": "Financial",
+      "stocks": [
+        { "id": 1, "name": "HDFC Bank",        "purchasePrice": 1490, "qty": 50,   "ticker": "HDFCBANK.NS" },
+        { "id": 2, "name": "Bajaj Finance",     "purchasePrice": 6466, "qty": 15,   "ticker": "BAJFINANCE.NS" },
+        { "id": 3, "name": "ICICI Bank",        "purchasePrice": 780,  "qty": 84,   "ticker": "ICICIBANK.NS" },
+        { "id": 4, "name": "Bajaj Housing",     "purchasePrice": 130,  "qty": 504,  "ticker": "BAJAJHFL.NS" },
+        { "id": 5, "name": "Savani Financials", "purchasePrice": 24,   "qty": 1080, "ticker": "SAVANIFINL.BO" }
+      ]
+    },
+    {
+      "name": "Technology",
+      "stocks": [
+        { "id": 6,  "name": "Affle India",    "purchasePrice": 1151, "qty": 50,  "ticker": "AFFLE.NS" },
+        { "id": 7,  "name": "LTI Mindtree",   "purchasePrice": 4775, "qty": 16,  "ticker": "LTIM.NS" },
+        { "id": 8,  "name": "KPIT Tech",      "purchasePrice": 672,  "qty": 61,  "ticker": "KPITTECH.NS" },
+        { "id": 9,  "name": "Tata Tech",      "purchasePrice": 1072, "qty": 63,  "ticker": "TATATECH.NS" },
+        { "id": 10, "name": "BLS E-Services", "purchasePrice": 232,  "qty": 191, "ticker": "BLSE.NS" },
+        { "id": 11, "name": "Tanla",          "purchasePrice": 1134, "qty": 45,  "ticker": "TANLA.NS" }
+      ]
+    },
+    {
+      "name": "Consumer",
+      "stocks": [
+        { "id": 12, "name": "Dmart",         "purchasePrice": 3777, "qty": 27, "ticker": "DMART.NS" },
+        { "id": 13, "name": "Tata Consumer", "purchasePrice": 845,  "qty": 90, "ticker": "TATACONSUM.NS" },
+        { "id": 14, "name": "Pidilite",      "purchasePrice": 2376, "qty": 36, "ticker": "PIDILITIND.NS" }
+      ]
+    },
+    {
+      "name": "Power",
+      "stocks": [
+        { "id": 15, "name": "Tata Power", "purchasePrice": 224,  "qty": 225, "ticker": "TATAPOWER.NS" },
+        { "id": 16, "name": "KPI Green",  "purchasePrice": 875,  "qty": 50,  "ticker": "KPIGREEN.NS" },
+        { "id": 17, "name": "Suzlon",     "purchasePrice": 44,   "qty": 450, "ticker": "SUZLON.NS" },
+        { "id": 18, "name": "Gensol",     "purchasePrice": 998,  "qty": 45,  "ticker": "GENSOL.NS" }
+      ]
+    },
+    {
+      "name": "Others",
+      "stocks": [
+        { "id": 19, "name": "Hariom Pipes",  "purchasePrice": 580,  "qty": 60, "ticker": "HARIOMPIPE.NS" },
+        { "id": 20, "name": "Astral",        "purchasePrice": 1517, "qty": 56, "ticker": "ASTRAL.NS" },
+        { "id": 21, "name": "Polycab",       "purchasePrice": 2818, "qty": 28, "ticker": "POLYCAB.NS" },
+        { "id": 22, "name": "Clean Science", "purchasePrice": 1610, "qty": 32, "ticker": "CLEAN.NS" },
+        { "id": 23, "name": "Deepak Nitrite","purchasePrice": 2248, "qty": 27, "ticker": "DEEPAKNTR.NS" },
+        { "id": 24, "name": "Fine Organic",  "purchasePrice": 4284, "qty": 16, "ticker": "FINEORG.NS" },
+        { "id": 25, "name": "Gravita",       "purchasePrice": 2037, "qty": 8,  "ticker": "GRAVITA.NS" },
+        { "id": 26, "name": "SBI Life",      "purchasePrice": 1197, "qty": 49, "ticker": "SBILIFE.NS" }
+      ]
+    }
+  ]
+}
