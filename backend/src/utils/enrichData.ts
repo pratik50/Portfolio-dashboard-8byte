@@ -1,13 +1,10 @@
 import { PortfolioData, LiveStockData, EnrichedSector } from '../types/index.js'
 
-// Static data (portfolio.json) + Live data (Yahoo) combining here
-// All these calculations are done in this function (gain/loss, present value, portfolio %)
 export function enrichPortfolio(
     portfolioData: PortfolioData,
     liveData: Record<string, LiveStockData>
 ): { enrichedSectors: EnrichedSector[], totalInvestment: number } {
 
-    // All sectors total investment
     let totalInvestment = 0
     portfolioData.sectors.forEach(sector => {
         sector.stocks.forEach(stock => {
@@ -21,7 +18,7 @@ export function enrichPortfolio(
 
             const investment = stock.purchasePrice * stock.qty
 
-            // Present value — live price * qty
+            // Present value of stock
             const presentValue = live?.cmp ? live.cmp * stock.qty : null
             const gainLoss = presentValue ? presentValue - investment : null
             const gainLossPercent = gainLoss ? (gainLoss / investment) * 100 : null

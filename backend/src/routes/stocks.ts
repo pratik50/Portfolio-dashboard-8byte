@@ -18,10 +18,13 @@ router.get('/', async (req: Request, res: Response) => {
 
         // Cache miss
         const tickers = getAllTickers()
+        console.log(tickers)
         const liveData = await fetchLiveData(tickers)
 
         // Static + Live data combine and calculate
-        const { enrichedSectors, totalInvestment } = enrichPortfolio(portfolioData, liveData)
+        const result = enrichPortfolio(portfolioData, liveData)
+        const enrichedSectors = result.enrichedSectors
+        const totalInvestment = result.totalInvestment
 
         const responseData = {
             sectors: enrichedSectors,
