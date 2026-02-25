@@ -6,6 +6,7 @@ export interface Stock {
     qty: number
     ticker: string
     investment: number
+    exchange: string
     portfolioPercent: number
     cmp: number | null
     pe: number | null

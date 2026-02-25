@@ -49,7 +49,6 @@ export default function SummaryCard({ data }: Props) {
             {/* summary cards */}
             <div className="grid grid-cols-3 gap-4">
 
-                {/*Total Investment*/}
                 <div className="bg-gray-50 rounded-xl p-4">
                     <p className="text-sm text-gray-500 mb-1">Total Investment</p>
                     <p className="text-xl font-bold text-gray-800">
@@ -57,7 +56,6 @@ export default function SummaryCard({ data }: Props) {
                     </p>
                 </div>
 
-                {/*Present Value*/}
                 <div className="bg-gray-50 rounded-xl p-4">
                     <p className="text-sm text-gray-500 mb-1">Present Value</p>
                     <p className="text-xl font-bold text-gray-800">
@@ -65,7 +63,6 @@ export default function SummaryCard({ data }: Props) {
                     </p>
                 </div>
 
-                {/* Gain/Loss*/}
                 <div className={`rounded-xl p-4 ${isProfit ? 'bg-green-50' : 'bg-red-50'}`}>
                     <p className="text-sm text-gray-500 mb-1">Total Gain/Loss</p>
                     <p className={`text-xl font-bold ${isProfit ? 'text-green-600' : 'text-red-600'}`}>

@@ -1,6 +1,6 @@
 import { usePortfolio } from './hooks/usePortfolio'
 import SummaryCard from './components/SummaryCard'
-import PortfolioTable from './components/PortfolioTable'
+import SectorGroup from './components/SectorGroup'
 
 export default function App() {
   const { data, loading, error } = usePortfolio()
@@ -29,8 +29,11 @@ export default function App() {
       <div className="w-full max-w-7xl px-6 py-10">
 
         <SummaryCard data={data} />
-        <PortfolioTable stocks={data.sectors[0].stocks} />
         
+        {data.sectors.map(sector => (
+          <SectorGroup key={sector.name} sector={sector} />
+        ))}     
+         
       </div>
     </div>
   )
