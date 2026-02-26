@@ -3,6 +3,7 @@ import cache from '../utils/cache'
 import portfolioData, { getAllTickers } from '../utils/portfolio'
 import { fetchLiveData } from '../utils/yahooFetch'
 import { enrichPortfolio } from '../utils/enrichData'
+import { isMarketOpen } from '../utils/marketHours'
 
 const router = express.Router()
 
@@ -32,8 +33,9 @@ router.get('/', async (req: Request, res: Response) => {
             lastUpdated: new Date().toISOString(), 
         }
 
-        // Response cache store for 30s
-        cache.set('portfolioData', responseData)
+        // Response cache store for 5 seconds if market is open else 5 minutes
+        const TTL = isMarketOpen() ? 5 : 300
+        cache.set('portfolioData', responseData, TTL)
 
         res.json({ success: true, data: responseData, fromCache: false })
 

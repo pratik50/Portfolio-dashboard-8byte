@@ -24,8 +24,8 @@ export function usePortfolio() {
         
         loadData()
 
-        // fecth data every 15 seconds
-        const interval = setInterval(loadData, 15000)
+        // fecth data every 13 seconds
+        const interval = setInterval(loadData, 8000)
 
         return () => clearInterval(interval)
     }, [])
